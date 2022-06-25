@@ -1,0 +1,54 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark  p-3 border border-primary"  style="background-color: #3F51B5;">
+
+  <a class="navbar-brand " [routerLink]="['/']" routerLinkActive="router-link-active" style="font-size: 25px;"><mat-icon inline="true">auto_stories</mat-icon> KantinApplication |</a>
+  <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="navClick($event)">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <mat-icon>apps</mat-icon>
+  </button>
+
+  <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1  border border-secondary text-white classborder" data-toggle="collapse" data-target=".navbar-collapse.show" [routerLink]="['/categories']" routerLinkActive="router-link-active"  ><span class="pl-3 pr-3"><mat-icon>qr_code</mat-icon> Kategoriler</span> </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1 border border-secondary text-white classborder"  data-toggle="collapse" data-target=".navbar-collapse.show" [routerLink]="['/products']" routerLinkActive="router-link-active" ><span class="pl-3 pr-3"><mat-icon>loyalty</mat-icon> Ürünler</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1 border border-secondary text-white classborder"  data-toggle="collapse" data-target=".navbar-collapse.show" [routerLink]="['/persons']" routerLinkActive="router-link-active" ><span class="pl-3 pr-3"><mat-icon>3p</mat-icon> Üyeler</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1 border border-secondary text-white classborder"  data-toggle="collapse" data-target=".navbar-collapse.show"  [routerLink]="['/basketadd']" routerLinkActive="router-link-active" ><span class="pl-3 pr-3"><mat-icon>add_shopping_cart</mat-icon> Alışveriş Yap</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1 border border-secondary text-white classborder"  data-toggle="collapse" data-target=".navbar-collapse.show"  [routerLink]="['/baskets']" routerLinkActive="router-link-active" ><span class="pl-3 pr-3"><mat-icon>shopping_cart_checkout</mat-icon> Sepet</span></a>
+      </li>
+
+
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1 border border-secondary text-white classborder"  data-toggle="collapse" data-target=".navbar-collapse.show" [routerLink]="['/orders']" routerLinkActive="router-link-active" ><span class="pl-3 pr-3"><mat-icon>currency_lira</mat-icon> Borç</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mt-2 mx-1 border border-secondary text-white classborder"  data-toggle="collapse" data-target=".navbar-collapse.show" [routerLink]="['/orderspaid']" routerLinkActive="router-link-active" ><span class="pl-3 pr-3"><mat-icon>done</mat-icon> Ödenmiş</span></a>
+      </li>
+
+    </ul>
+    <!-- <ul  class="navbar-nav">
+      <li class="navbar-nav">
+        <a [routerLink]="['/user-edit']" class="nav-link btn btn-sm btn-success text-light "  ></a>
+      </li>
+      <li class="navbar-nav">
+        <a  class="nav-link"  >Çıkış Yap</a>
+      </li>
+    </ul>
+    <form class="form-inline mt-2 mt-md-0" >
+      <input  required class="form-control mr-sm-2" type="text" name="username" placeholder="Kullanıcı Adı" >
+      <input  required class="form-control mr-sm-2"  type="text" name="password" placeholder="Parola" >
+      <button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Giriş Yap</button>
+    </form> -->
+  </div>
+
+</nav>
+
+
